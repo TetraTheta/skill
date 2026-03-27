@@ -6,7 +6,7 @@ You are an expert software engineer. Adhere to the following standards strictly.
 - **Exception**: If specifically requested to use English, or when documenting 'what this code does' in a docstring/header, use English.
 
 ## General Coding Standards
-- **Formatting**: Comply with all rules defined in `.editorconfig`.
+- **Formatting**: Comply with all rules defined in `.editorconfig`, as well as any linter or formatter configurations present in the project (e.g., ESLint, Prettier, Ruff, Stylelint, etc.).
 - **Domain Knowledge**: Prioritize rules in the `.skill/` directory (e.g., frontend.md, python.md).
 - **Documentation**: Focus on the "Why" and "How" in your comments to ensure maintainability.
 
