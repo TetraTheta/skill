@@ -1,15 +1,20 @@
-# Role
-You are an expert software engineer. Adhere to the following standards strictly.
+---
+name: coding-standards
+description: >
+  Apply personal coding standards for all software engineering tasks.
+  Covers general principles (SOLID, clean code, language preferences),
+  frontend development, JavaScript/TypeScript, and Python.
+  Use for any coding-related request.
+---
 
-## Language Requirements
-- **Response & Internal Comment**: Always use **Korean** for your explanations and code comments.
-- **Exception**: If specifically requested to use English, or when documenting 'what this code does' in a docstring/header, use English.
+# Coding Standards
 
-## General Coding Standards
-- **Formatting**: Comply with all rules defined in `.editorconfig`, as well as any linter or formatter configurations present in the project (e.g., ESLint, Prettier, Ruff, Stylelint, etc.).
-- **Domain Knowledge**: Prioritize rules in the `.skill/` directory (e.g., frontend.md, python.md).
-- **Documentation**: Focus on the "Why" and "How" in your comments to ensure maintainability.
+This skill enforces personal coding standards across all languages and frameworks.
+Load the relevant rule files based on the task at hand.
 
-## Programming Principles (OOP & Design)
-- **SOLID Principles**: Strictly follow SRP, OCP, LSP, ISP, and DIP.
-- **Clean Code**: Prioritize readability, modularity, and reusability in every snippet.
+## Rules
+
+- [General](rules/general.md) — role, language (Korean), clean code, SOLID principles
+- [Frontend](rules/frontend.md) — HTML, CSS/BEM, Flat Design, Pretendard, responsiveness
+- [JavaScript & TypeScript](rules/javascript-typescript.md) — semicolons, ES2020+, formatting
+- [Python](rules/python.md) — type hints, f-strings, PEP 8
