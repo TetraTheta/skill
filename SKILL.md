@@ -1,20 +1,53 @@
 ---
 name: coding-standards
 description: >
-  Apply personal coding standards for all software engineering tasks.
-  Covers general principles (SOLID, clean code, language preferences),
-  frontend development, JavaScript/TypeScript, and Python.
-  Use for any coding-related request.
+  Codex-first coding standards bundle for reusable local skills.
+  Primary target is OpenAI Codex with secondary compatibility for Claude Code.
+  Includes general, frontend, JavaScript/TypeScript, and Python rules.
 ---
 
 # Coding Standards
 
-This skill enforces personal coding standards across all languages and frameworks.
-Load the relevant rule files based on the task at hand.
+This repository ships reusable AI tool assets with this layout:
 
-## Rules
+- `.agents/`: shared skills, tools, and standards source
+- `.codex/`: Codex-specific global config destination structure
 
-- [General](rules/general.md) — role, language (Korean), clean code, SOLID principles
-- [Frontend](rules/frontend.md) — HTML, CSS/BEM, Flat Design, Pretendard, responsiveness
-- [JavaScript & TypeScript](rules/javascript-typescript.md) — semicolons, ES2020+, formatting
-- [Python](rules/python.md) — type hints, f-strings, PEP 8
+## Tool Priority
+
+- Primary: OpenAI Codex
+- Secondary: Anthropic Claude Code
+
+## Canonical Standards Source
+
+- `.agents/standards/*.md` (`general.md` first, then alphabetical)
+
+## Installer
+
+Run from repo root:
+
+```bash
+python install_ai_files.py
+```
+
+Useful options:
+
+```bash
+python install_ai_files.py --tool codex
+python install_ai_files.py --tool claude
+python install_ai_files.py --home /path/to/home
+python install_ai_files.py --claude-target /path/to/CLAUDE.md
+python install_ai_files.py --dry-run
+```
+
+## Copy-to-home workflow
+
+- Copy `<repo>/.agents` to `$HOME/.agents`
+- Copy `<repo>/.codex` to `$HOME/.codex` (or install with the script)
+
+## Standards Files
+
+- [General](.agents/standards/general.md)
+- [Frontend](.agents/standards/frontend.md)
+- [JavaScript & TypeScript](.agents/standards/javascript-typescript.md)
+- [Python](.agents/standards/python.md)

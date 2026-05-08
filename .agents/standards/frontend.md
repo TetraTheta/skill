@@ -12,10 +12,7 @@
 - **Design Philosophy**: Apply **Flat Design** — minimize gradients, drop shadows, and 3D
   effects. Emphasize clarity, whitespace, and typography.
 - **Primary Typeface**: Use **Pretendard Variable**.
-  - Load via CDN:
-    ```
-    https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css
-    ```
+  - Load via CDN: `https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css`
   - Apply as: `font-family: "Pretendard Variable", Pretendard, -apple-system, sans-serif;`
     on `:root` or `body`.
 - **Responsiveness**: All components must be **Mobile-First** and fully responsive.
