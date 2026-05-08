@@ -21,7 +21,7 @@ The user may provide one or more cases. Each case contains:
 6. Map diagnostics to the smallest relevant code region.
 7. Identify the root cause, not only the reported line.
 8. If multiple cases share one root cause, fix the shared cause once.
-9. 9. Make the smallest safe change that resolves the root cause across the affected type graph, not merely the smallest local edit.
+9. Make the smallest safe change that resolves the root cause across the affected type graph, not merely the smallest local edit.
 10. Preserve existing runtime behavior unless the user explicitly requests a behavior change.
 
 ## Python type safety rules
@@ -145,4 +145,3 @@ Do not say that full-project validation was skipped because the command was unsp
 ## Language
 
 - All explanations, comments, and docstrings must be written in Korean.
-
