@@ -1,5 +1,10 @@
 # Frontend Standards
 
+## Framework Notes
+
+- For Vue projects, follow `javascript-typescript.md` for lint/format parser and tooling
+  dependency details.
+
 ## HTML & Embedded Content
 
 - **Indentation**: CSS inside `<style>` and JS inside `<script>` tags must use 2-space

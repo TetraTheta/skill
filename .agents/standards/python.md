@@ -1,5 +1,10 @@
 # Python Standards
 
+## Formatter / Linter Preferences
+
+- **Preferred Tooling**: Use **Ruff** as the default formatter/linter.
+- **Config Location**: Prefer integrating Ruff configuration in `pyproject.toml`.
+
 ## Formatting
 
 - **Indentation**: Follow `.editorconfig` (default: 4 spaces).
