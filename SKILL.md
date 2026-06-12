@@ -3,7 +3,7 @@ name: coding-standards
 description: >
   Codex-first coding standards bundle for reusable local skills.
   Primary target is OpenAI Codex with secondary compatibility for Claude Code.
-  Includes general, frontend, JavaScript/TypeScript, and Python rules.
+  Includes general, frontend, Java, JavaScript/TypeScript, and Python rules.
 ---
 
 # Coding Standards
@@ -49,5 +49,6 @@ python install_ai_files.py --dry-run
 
 - [General](.agents/standards/general.md)
 - [Frontend](.agents/standards/frontend.md)
+- [Java](.agents/standards/java.md)
 - [JavaScript & TypeScript](.agents/standards/javascript-typescript.md)
 - [Python](.agents/standards/python.md)

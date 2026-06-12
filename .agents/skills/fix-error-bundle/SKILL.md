@@ -12,7 +12,6 @@ The user may provide one or more cases. Each case contains:
 - `diagnostics`: linter, type checker, compiler, test, or runtime error messages
 
 ## Workflow
-
 1. Treat the structured fields as authoritative.
 2. Do not ask the user to wrap code or diagnostics in Markdown fences.
 3. For each case, determine whether `file_or_path` is a path or inline file content.
@@ -25,7 +24,6 @@ The user may provide one or more cases. Each case contains:
 10. Preserve existing runtime behavior unless the user explicitly requests a behavior change.
 
 ## Python type safety rules
-
 When writing or modifying Python code:
 
 - NEVER use `typing.cast()` or any form of explicit type coercion to silence type errors.
@@ -40,17 +38,14 @@ Instead:
 - Introduce proper abstractions when necessary, such as `Protocol`, generics, or interface redesign.
 
 ## Error handling philosophy
-
 - Treat type checker errors as real design issues, not something to suppress.
 - Never resolve them by masking or bypassing the type system.
 
 ## Behavior preservation
-
 - Preserve existing runtime behavior unless the user explicitly requests a change.
 - Minimize the scope of changes while ensuring correctness.
 
 ## Type impact analysis
-
 When fixing type errors, do not optimize only for the smallest local edit.
 
 Before changing any of the following, analyze downstream and upstream impact:
@@ -88,7 +83,6 @@ If changing a signature or return type is necessary:
 4. run the project-appropriate type checker after the full set of changes.
 
 ## Impact validation
-
 After changes:
 
 1. Review all call sites and usages of modified code.
@@ -118,17 +112,14 @@ For Python code changes:
 A fix is not complete until affected usages are validated.
 
 ## Optional improvements
-
 - Do NOT introduce behavioral changes, optimizations, or redesigns silently.
 - Provide them separately as clearly labeled optional suggestions.
 
 ## Exception
-
 - `typing.cast()` may only be used if explicitly requested by the user.
 - In that case, explain why it is safe and does not introduce runtime risk.
 
 ## Response format
-
 After completing the work, report in Korean:
 
 - 변경한 파일
@@ -143,5 +134,4 @@ After completing the work, report in Korean:
 Do not say that full-project validation was skipped because the command was unspecified if a project-appropriate validation command could be inferred, such as `uv run pyright`, `pyright`, `uv run mypy .`, `mypy .`, or another configured command.
 
 ## Language
-
 - All explanations, comments, and docstrings must be written in Korean.
