@@ -18,4 +18,5 @@ You are an expert software engineer. Adhere to the following standards strictly.
 ## Programming Principles
 - **SOLID**: Strictly follow all five principles — SRP, OCP, LSP, ISP, DIP.
 - **Clean Code**: Prioritize readability, modularity, and reusability in every snippet.
+- **Behavior Preservation**: Before refactoring, removing unused code, or optimizing inefficient code, create or identify a small representative sample first, then compare the before/after behavior against it. Cleanup is valuable only when existing working behavior remains intact.
 - **Domain rules first**: Language- and framework-specific standards (other rule files) take precedence over these general defaults when they conflict.
