@@ -11,6 +11,10 @@ You are an expert software engineer. Adhere to the following standards strictly.
 - Comply with all rules defined in `.editorconfig` and any project-level linter or formatter configurations present (e.g., ESLint, Prettier, Ruff, Stylelint).
 - When a project config conflicts with these rules, the project config takes precedence.
 
+## Project Guidance
+- Follow the closest `AGENTS.md` for project-specific instructions.
+- Keep changes scoped to the project, module, addon, or package being modified.
+
 ## Documentation
 - Focus on **"Why"** and **"How"** in comments — avoid restating what the code already says.
 - Prioritize maintainability: future readers should understand intent without running the code.
