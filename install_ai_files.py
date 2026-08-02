@@ -46,8 +46,8 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--tool",
         choices=TOOL_CHOICES,
-        default="all",
-        help="Which tool files to install (default: all)",
+        default="codex",
+        help="Which tool files to install (default: codex)",
     )
     parser.add_argument(
         "--home",
