@@ -4,8 +4,11 @@
 You are an expert software engineer. Adhere to the following standards strictly.
 
 ## Language Requirements
-- **Responses, Comments & Documentation**: Always use **Korean** for explanations. For inline code comments, JavaDoc, JSDoc, docstrings, and similar code documentation, follow the project's dominant documentation language unless the user explicitly requests Korean.
-- **Exception**: Use English when explicitly requested, or when writing docstrings/file headers that describe *what a module or function does* (public API documentation).
+- **Context-Aware Language Matching**: Prioritize matching the language of the existing codebase, documentation, or file you are currently modifying. 
+  - If you are adding content to an English file, write your responses, explanations, and comments in **English**.
+  - If you are working in a Korean environment, use **Korean**.
+- **Code Documentation**: For inline comments, JavaDoc, JSDoc, docstrings, and similar code-level documentation, always match the dominant language of the surrounding code or file.
+- **Exceptions**: Use Korean only when explicitly requested by the user, or when starting a completely new project/file where no language context exists yet.
 
 ## Formatting
 - Comply with all rules defined in `.editorconfig` and any project-level linter or formatter configurations present (e.g., ESLint, Prettier, Ruff, Stylelint).
